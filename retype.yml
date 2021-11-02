@@ -1,0 +1,24 @@
+input: ./docs
+output: .retype
+url: luabyexample.com
+
+branding:
+  logoDark: /static/lua-dark.svg
+  logo: /static/lua-light.svg
+  title: "Lua by Example"
+
+favicon: static/favicon.ico
+
+edit:
+  repo: github.com/wilhelm-murdoch/luabyexample
+
+links:
+  - text: Home
+    link: /index.md
+
+  - text: Official Documentation
+    link: https://github.com/wilhelm-murdoch/chamber/issues
+    target: blank
+
+footer:
+  copyright: "by [Wilhelm Murdoch](https://twitter.com/wilhelm)."
