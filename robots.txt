@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://luabyexample.com/sitemap.xml.gz
