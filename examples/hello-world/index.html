@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEFXH11PBS"></script>
+    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-HEFXH11PBS');</script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="turbo-cache-control" content="no-cache">
@@ -8,24 +11,28 @@
     <!-- Primary Meta Tags -->
     <title>Hello, world!</title>
     <meta name="title" content="Hello, world!">
+    <meta name="description" content="Our first program will print the classic \"Hello, world!\" message. Here’s the full source code:" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://luabyexample.com/examples/hello-world/">
     <meta property="og:title" content="Hello, world!">
+    <meta property="og:description" content="Our first program will print the classic \"Hello, world!\" message. Here’s the full source code:">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://luabyexample.com/examples/hello-world/">
     <meta property="twitter:title" content="Hello, world!">
+    <meta property="twitter:description" content="Our first program will print the classic \"Hello, world!\" message. Here’s the full source code:">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/static/favicon.ico" rel="icon" />
-    <link href="/resources/css/retype.css?v=1.10.689136097768" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.10.689141238816" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.10.689136097768" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.10.689141238816" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.10" defer data-turbo-track="reload"></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.10.689141238816" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -200,6 +207,40 @@
         <span>Hello, world!</span>
     </h1>
 </doc-anchor-target>
+<p>Our first program will print the classic &quot;Hello, world!&quot; message. Here’s the full source code:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-lua"><code v-pre class="language-lua">print('Hello, world!')</code></pre>
+</doc-codeblock></div>
+<p>Save this to your local file system and assign <code v-pre>hello-world.lua</code> as the name. You can execute this program with the following command:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">$ lua hello-world.lua
+Hello, world!</code></pre>
+</doc-codeblock></div>
+<p>The <code v-pre>*.lua</code> file extension isn&#x27;t really necessary as the interpreter will assume its contents contain valid Lua code.</p>
+<p>If you wish to run this program without explicitly-feeding it into the interpreter, you can make it an executable. Here are the updated contents of the program:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-lua"><code v-pre class="language-lua">#!/usr/bin/env lua
+
+print('Hello, world!')</code></pre>
+</doc-codeblock></div>
+<p>The shebang at the top of the file tells your operating system to execute this program as Lua by running it through the specified interpreter. Give the file executable permissions and you can run it directly. If you add the executable file&#x27;s base directory to your OS&#x27; <code v-pre>$PATH</code>, you will be able to execute it anywhere within your file system without the <code v-pre>./</code> prefix.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">$ chmod a+x hello-world
+$ ./hello-world
+Hello, world!</code></pre>
+</doc-codeblock></div>
+<p>Running the Lua interpreter in interactive mode allows you to execute arbitrary code in a REPL.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">$ lua
+Lua 5.4.3  Copyright (C) 1994-2021 Lua.org, PUC-Rio
+&gt; print('Hello, world!')
+Hello, world!</code></pre>
+</doc-codeblock></div>
+<p>Finally, you can execute arbitrary cold by pass it directly into the interpreter via the command line:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">$ lua -e &quot;print('Hello, world!')&quot;
+Hello, world!</code></pre>
+</doc-codeblock></div>
 
 
 
@@ -280,6 +321,6 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Hello, world!", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+        <script>window.__DOCS__ = { "title": "Hello, world!", icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
     </body>
 </html>
