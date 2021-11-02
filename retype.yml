@@ -27,3 +27,7 @@ links:
 
 footer:
   copyright: "by [Wilhelm Murdoch](https://twitter.com/wilhelm)."
+
+integrations:
+  googleAnalytics:
+    id: G-HEFXH11PBS
