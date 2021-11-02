@@ -16,8 +16,13 @@ links:
   - text: Home
     link: /index.md
 
-  - text: Official Documentation
-    link: https://github.com/wilhelm-murdoch/chamber/issues
+  - text: Issues
+    link: https://github.com/wilhelm-murdoch/luabyexample/issues
+    target: blank
+
+  - text: GitHub
+    link: https://github.com/wilhelm-murdoch/luabyexample
+    icon: mark-github
     target: blank
 
 footer:
