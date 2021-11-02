@@ -13,6 +13,7 @@ print('Hello, world!')
 Save this to your local file system and assign `hello-world.lua` as the name. You can execute this program with the following command:
 
 ```bash
+$ echo "print('Hello, world!')" > hello-world.lua
 $ lua hello-world.lua
 Hello, world!
 ```
